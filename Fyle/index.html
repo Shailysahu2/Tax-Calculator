@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tax Calculator</h1>
+  </header>
+  <main>
+    <section id="calculator">
+      <h2>Calculate Your Tax</h2>
+      <form id="tax-form">
+        <div class="form-group">
+          <label for="income">Enter Gross Annual Income (₹):</label>
+          <input type="number" id="income" name="income" required>
+          <span class="error-icon" data-tooltip="Invalid input!">!</span>
+        </div>
+        <div class="form-group">
+          <label for="extra-income">Enter Extra Income (₹):</label>
+          <input type="number" id="extra-income" name="extra-income" required>
+          <span class="error-icon" data-tooltip="Invalid input!">!</span>
+        </div>
+         <!-- <div class="form-group">
+          <label for="deductions">Deductions (₹):</label>
+          <input type="number" id="deductions" name="deductions" required>
+          <span class="error-icon" data-tooltip="Invalid input!">!</span>
+        </div> -->
+         <div class="form-group">
+          <label for="age">Enter Age Group:</label>
+          <select id="age" name="age" required>
+            <option value="<40">&lt;40</option>
+            <option value="≥40 &lt;60">&ge;40 &lt;60</option>
+            <option value="≥60">&ge;60</option>
+          </select>
+          <span class="error-icon" data-tooltip="Please select an option!">!</span>
+        </div>
+        <div class="form-group">
+            <label for="deductions">Enter Total Application Deductions (₹):</label>
+            <input type="number" id="deductions" name="deductions" required>
+            <span class="error-icon" data-tooltip="Invalid input!">!</span>
+          </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Tax Calculator</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>  
